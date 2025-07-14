@@ -1,0 +1,794 @@
+header {
+  width: 100%;
+  height: 170px;
+  box-shadow: 0px 0px 1px lightgray;
+
+  div.top {
+    width: inherit;
+    height: 60px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+  div.middle {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row nowrap;
+    .right {
+      width: 70%;
+      height: inherit;
+      display: flex;
+      flex-direction: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding-right: 16px;
+      gap: 10px;
+      .logo {
+        width: 20%;
+        height: inherit;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        cursor: pointer;
+        .digikalalogo {
+          width: 195px;
+          height: 30px;
+        }
+      }
+      .search {
+        width: 80%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        input[type="search"] {
+          width: 568px;
+          height: 44px;
+          padding: 0px 16px;
+          background-color: #f0f0f1;
+          border: unset;
+          border-radius: 4px;
+          box-sizing: border-box;
+          &::placeholder {
+            font-family: IranYekanM;
+            font-size: 12px;
+            padding: 10px 40px 10px 12px;
+            line-height: 26px;
+
+            color: #81858b;
+          }
+          &:focus {
+            outline: unset;
+            width: 82%;
+            background-color: white;
+          }
+        }
+        .searchicon {
+          width: 17px;
+          height: 17px;
+          padding-right: 12px;
+          position: absolute;
+          color: #a1a3a8;
+        }
+      }
+    }
+    .left {
+      width: 30%;
+      height: inherit;
+      display: flex;
+      flex-direction: row nowrap;
+      justify-content: end;
+      align-items: center;
+      box-sizing: border-box;
+      .LoginAndAlert {
+        width: 70%;
+        height: inherit;
+
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: end;
+        align-items: center;
+
+        div.alert {
+          width: 8px;
+          height: inherit;
+          padding-left: 20px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .alerticon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            font-family: Cube;
+            font-size: 24px;
+            color: #424750;
+          }
+        }
+        div.login {
+          height: inherit;
+          width: 50%;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a {
+            text-decoration: none;
+            gap: 5px;
+            button {
+              all: unset;
+              width: fit-content;
+
+              border-radius: 8px;
+              border: 1px solid #e0e0e2;
+              font-family: IranYekanB;
+              font-size: 12px;
+              padding: 8px 16px;
+
+              line-height: 2;
+              box-sizing: border-box;
+
+              color: #0c0c0c;
+              display: flex;
+              gap: 5px;
+
+              svg {
+                width: 24px;
+                height: 24px;
+                fill: #424750;
+              }
+            }
+          }
+        }
+      }
+      div.cart {
+        width: 20%;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        a {
+          width: 100%;
+          border-right: 2px solid #e0e0e2;
+          height: 24px;
+          overflow: hidden;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            width: 24px;
+            height: 24px;
+
+            fill: #424750;
+          }
+        }
+      }
+    }
+  }
+
+  div.bottom {
+    width: inherit;
+    height: 40px;
+    box-sizing: border-box;
+    nav {
+      width: 100%;
+      height: 100%;
+      padding: 0px 12px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      border-bottom: 1px solid #d0d0d0;
+      .menu {
+        height: 100%;
+        ul {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: start;
+          align-items: center;
+          list-style: none;
+
+          li {
+            width: fit-content;
+            height: 100%;
+            padding: 0px 12px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+              color: #62666d;
+              text-decoration: none;
+              font-family: IranYekan;
+              font-size: 12px;
+              display: flex;
+              align-items: center;
+              &.hamburgermenu {
+                color: rgb(63, 64, 100);
+                font-family: IranYekanB;
+                font-size: 14px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                .hamburgermenuicon {
+                  width: 20px;
+                  height: 20px;
+                  fill: #424750;
+                }
+              }
+              &.amazing {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                .amazingicon {
+                  width: 25px;
+                  height: 25px;
+                  fill: rgb(161, 163, 168);
+                  padding-left: 4px;
+                }
+                &.border-right {
+                  border-right: 1px solid rgb(224, 224, 226);
+                  height: 16px;
+                  padding: 5px;
+                  box-sizing: border-box;
+                }
+              }
+              &.supermarket {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                .supermarketicon {
+                  width: 25px;
+                  height: 25px;
+                  color: rgb(161, 163, 168);
+                  font-family: Cube;
+                  font-size: 18px;
+                  font-weight: 400;
+                  text-align: center;
+                  line-height: 1.25;
+                  padding-left: 2px;
+                }
+              }
+              &.gold {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                .goldicon {
+                  width: 25px;
+                  height: 25px;
+                  color: rgb(161, 163, 168);
+                  font-family: Cube;
+                  font-size: 18px;
+                  font-weight: 400;
+                  text-align: center;
+                  line-height: 1.25;
+                  padding-left: 2px;
+                }
+              }
+              &.bestseller {
+                width: 97px;
+                height: 26;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                .bestsellericon {
+                  width: 25px;
+                  height: 25px;
+                  fill: rgb(161, 163, 168);
+                  padding-left: 4px;
+                }
+              }
+              &.useditem {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                .useditemicon {
+                  width: 25px;
+                  height: 25px;
+                  color: rgb(161, 163, 168);
+                  font-family: Cube;
+                  font-size: 18px;
+                  font-weight: 400;
+                  text-align: center;
+                  line-height: 1.25;
+                  padding-left: 2px;
+                }
+              }
+              &.question {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                &.border-right {
+                  border-right: 1px solid rgb(224, 224, 226);
+                  height: 16px;
+                  padding-right: 10px;
+                  box-sizing: border-box;
+                }
+              }
+            }
+            &:hover > .submenu {
+              display: block;
+            }
+            .submenu {
+              width: 85vw;
+              height: 65vh;
+              position: absolute;
+              top: 100%;
+              right: 0%;
+              z-index: 2;
+              display: none;
+              border-radius: 0px 0px 12px 12px;
+              .rightMenu {
+                width: 18%;
+                height: 100%;
+                background-color: #f5f5f5;
+                border-radius: 0px 0px 10px 0px;
+                box-sizing: border-box;
+                transition: 300ms;
+                ul {
+                  width: 100%;
+                  height: 100%;
+                  list-style: unset;
+                  display: flex;
+                  flex-flow: column nowrap;
+                  justify-content: start;
+                  overflow-y: auto;
+                  direction: ltr;
+                  &::-webkit-scrollbar {
+                    background-color: #f5f5f5;
+                    width: 8px;
+                    border-radius: 10px;
+                  }
+                  &::-webkit-scrollbar-thumb {
+                    background-color: gray;
+                    border-radius: 10px;
+                  }
+                  .submenuItems {
+                    width: 100%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: start;
+                    transition: 500ms;
+                    position: unset;
+                    gap: 10px;
+                    align-items: center;
+                    direction: rtl;
+                    cursor: pointer;
+                    
+                    svg {
+                      width: 18px;
+                      height: 18px;
+                      fill: rgb(63, 64, 100);
+                      font-size: 10px;
+                    }
+                    a {
+                      font-family: IranYekanM;
+                      color: rgb(63, 64, 100);
+                      font-size: 12px;
+                      transition: 500ms;
+                    }
+
+                    &:hover {
+                      background-color: white;
+                      .submenuhover {
+                        color: crimson;
+                      }
+                      svg {
+                        fill: crimson;
+                      }
+                    }
+                    &.svgNone {
+                      padding-right: 46px;
+                    }
+                    .sub3menu {
+                      height: 100%;
+                      background-color: rgb(255, 255, 255);
+                      position: absolute;
+                      right: 15%;
+                      top: 0;
+                      display: none;
+                      transition: 500ms;
+                      padding: 10px;
+                      box-sizing: border-box;
+                      &.show{
+                        display: block;
+                      }
+                      
+                      
+                      .items {
+                        height: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-evenly;
+                        align-items: start;
+                        gap: 10px;
+                        .allProducts {
+                          margin-right: 10px;
+                          padding: 10px 0px;
+                          font-size: 12px;
+                          font-family: IranYekan;
+                          color: rgb(25, 191, 211);
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          svg {
+                            width: 14px;
+                            height: 14px;
+                            fill: rgb(25, 191, 211);
+                          }
+                        }
+                        .sub3menuItems {
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          flex-flow: row nowrap;
+                          overflow-y: auto;
+                          direction: rtl;
+                          gap: 40px;
+                          padding-left: 40px;
+                          border-bottom-left-radius: 10px;
+                          &::-webkit-scrollbar {
+                            background-color: #f5f5f5;
+                            width: 8px;
+                          }
+                          &::-webkit-scrollbar-thumb {
+                            background-color: gray;
+                          }
+                          .groupes {
+                            height: 100%;
+                            .groupname {
+                              display: flex;
+                              flex-flow: row nowrap;
+                              justify-content: start;
+                              align-items: center;
+                              gap: 10px;
+                              padding: 10px 10px;
+                              direction: rtl;
+                              h1 {
+                                color: crimson;
+                                font-weight: 300;
+                              }
+                              font-family: IranYekanM;
+                              font-size: 14px;
+                              color: rgb(63, 64, 100);
+                              svg {
+                                width: 14px;
+                                height: 14px;
+                                fill: rgb(63, 64, 100);
+                              }
+                            }
+                            .groupItems {
+                              display: flex;
+                              flex-flow: column nowrap;
+                              justify-content: start;
+                              align-items: start;
+
+                              ul {
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: center;
+                                align-items: end;
+                                gap: 25px;
+                                padding-top: 10px;
+
+                                li {
+                                  a {
+                                    font-size: 12px;
+                                    font-family: IranYekanM;
+                                    transition: 200ms;
+                                    color: rgb(129, 133, 139);
+                                  }
+                                  &:hover {
+                                    .sub3hover {
+                                      color: crimson;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      
+                    }
+                    &:hover {
+                      .sub3menu {
+                        display: block;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .city {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+       
+          button {
+            all: unset;
+            label[for="open"]{
+            width: fit-content;
+            background-color: #fef6ef;
+            color: #f57f17;
+            border-radius: 50px;
+            padding: 8px 20px;
+            box-sizing: border-box;
+            font-family: IranYekanB;
+            font-size: 12px;
+            
+            cursor: pointer;
+            border: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .navigateicon {
+              color: rgb(245, 127, 23);
+              font-family: Cube;
+              font-size: 18px;
+              font-weight: 400;
+              padding-left: 5px;
+            }
+            }
+          
+          
+
+        }
+        .modal{
+          width: 440px;
+          height: 550px;
+          background-color: rgb(255, 255, 255);
+          border-radius: 16px;
+          border: 0.8px solid rgb(224, 224, 226);
+          box-shadow: 5px 5px 25px lightgray;
+          position: absolute;
+          left: calc(50% - 30vw / 2);
+          top: calc(50% - 75vh / 2);
+          z-index: 1000;
+          display: none;
+          transition: 500ms;
+          padding: 20px;
+          box-sizing: border-box;
+          direction: rtl;
+          overflow-x: hidden;
+          
+          .top{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.8px solid rgb(224, 224, 226);
+            direction: ltr;
+            label[for="close"]{
+              display: block;
+              width: fit-content;
+              color: rgb(0, 0, 0);
+              font-size: 30px;
+              font-weight: bold;
+              border-radius: 10px;
+              box-sizing: border-box;
+              cursor: pointer ;
+            }
+            .title{
+              font-family: IranYekanM;
+              font-size: 16px;
+            }
+          }
+          .middle{
+            width: 400px;
+            height: 120px;
+            
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-flow: column nowrap;
+            gap: 10px;
+            padding-top: 15px;
+            
+          box-sizing: border-box;
+          direction: rtl;
+
+          .searchTown{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row-reverse nowrap;
+            position: relative;
+            #search{
+              width: 380px;
+              height: 50px ;
+                background-color: #f0f0f1;
+                border: unset;
+                border-radius: 4px;
+                padding-right: 30px;
+                box-sizing: border-box;
+               &::placeholder{
+                  font-family: IranYekanM;
+                  font-size: 12px;
+                  color: rgb(161, 163, 168);
+                }
+              }
+              .searchicon{
+                width: 18px;
+                height: 18px;
+                color: rgb(161, 163, 168);
+                position: absolute;
+                left: 93%;
+              }
+          }
+          
+            
+            p{
+              font-size: 14px;
+              color: rgb(66, 66, 66);
+              font-family: IranYekan;
+              font-weight: 400;
+            }
+
+            
+          }
+          .bottom{
+            position: unset;
+            width: 400px;
+            height: 320px;
+            
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: start;
+            align-items: start;
+            .text{
+              width: 400px;
+              font-family: IranYekanB;
+              font-size: 16px;
+              padding-bottom: 10px;
+            }
+            .swiperCity{
+              width: 400px;
+             
+              .swiper {
+                width: 100%;
+                height: 100%;
+                direction: rtl;
+               
+              }
+          
+              .swiper-slide {
+                width: 400px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+  
+                .city{
+                  width: 400px;
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  .townOptions{
+                    width: 80px;
+                    display: flex;
+                    flex-flow: row-reverse nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.8px solid rgb(224, 224, 226);
+                    padding: 8px;
+                    padding-right: 12px;
+                    padding-left: 8px;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    gap: 5px;
+                    direction: ltr;
+                    .town{
+                      font-family: IranYekanM;
+                      font-size: 14px;
+                      color: rgb(63, 64, 100);
+                    }
+                    svg{
+                      width: 18px;
+                      height: 18px;
+                    }
+                  }
+    
+                }
+              }
+          
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .cityCategory{
+              width: 390px;
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: start;
+              align-items: center;
+              direction: rtl;
+              padding-top: 20px;
+             
+              .place{
+                width: 390px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 0.1px solid rgb(224, 224, 226);
+                padding: 10px;
+                .placename{
+                  display: flex;
+                  flex-flow: row nowrap;
+                  justify-content: start;
+                  align-items: center;
+                  gap: 5px;
+                  p{
+                    font-size: 14px;
+                  font-family: IranYekanB;
+                  color: rgb(63, 64, 100);
+                  }
+                  .name{
+                    font-size: 14px;
+                    font-family: IranYekan;
+                    color: rgb(161, 163, 168);
+                  }
+                }
+                svg{
+                  width: 25px;
+                  height: 25px;
+                }
+              }
+            }
+            
+            
+
+           
+          }
+        }
+        .modal::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        .modal::-webkit-scrollbar-thumb {
+          background: #bcbcbc;
+          border-radius: 16px; 
+        }
+        
+        
+        
+        #open:checked~.modal{
+          display: block;
+        }
+        
+        #open,#close{
+          display: none;
+        }
+        .modal::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+          border-radius: 10px;
+
+        
+        
+      }
+    }
+  }
+}
+}

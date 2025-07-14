@@ -1,0 +1,86 @@
+.story-container{
+    width: 100% ;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .story{
+        width: 90%;
+        height: 140px;
+        display: flex;
+        flex-flow: row nowrap ;
+        justify-content: start;
+        align-items: center;
+        gap: 24px;
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .item{
+                display: flex;
+                height: 100%;
+                width: 100px;
+                flex-flow: column nowrap;
+                justify-content: start;
+                align-items: center ;
+                padding-top: 8px ;
+                gap: 8px;
+                box-sizing: border-box;
+                .image{
+                    width: 74px;
+                    height: 74px;
+                   
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        outline: 2px solid purple;
+                        outline-offset: 3px;
+                        object-fit: cover;
+                    }
+          
+                }
+                .title{
+                    width: 100%;
+                    margin-top: 8px;
+                    font-size: 11px;
+                    font-family: IranYekan;
+                    color: rgb(35, 37, 78) ;
+                    text-align: center ;
+                   line-height: 24px;
+          
+                }
+            }
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-color: #c0c2c5;
+            border-radius: 50%;
+            border: 1px solid lightgray;
+            &::after {
+              color: #424750;
+              font-size: 12px;
+              font-weight: bold;
+            }
+    }
+
+    
+}
+}

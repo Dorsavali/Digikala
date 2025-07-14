@@ -1,0 +1,99 @@
+.brands-container {
+  width: 100%;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .brands {
+    width: 90%;
+    height: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    border-radius: 16px;
+    padding: 24px 0px;
+    box-sizing: border-box;
+    border: 0.8px solid rgb(224, 224, 226);
+    gap: 20px;
+    .title {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: rgb(249, 188, 0);
+      }
+      .text {
+        width: fit-content;
+      
+        font-family: IranYekanM;
+        font-size: 21px;
+        color: rgb(12, 12, 12);
+      }
+    }
+    .items {
+      width: 100%;
+      height: inherit;
+      .swiper {
+        width: 100%;
+        height: 100%;
+        
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 16px;
+            border-left: 0.8px solid rgb(224, 224, 226);
+            img{
+                width: 110px;
+                height: 110px;
+                object-fit: contain;
+            }
+        }
+        &.firstslide{
+            padding-right: 16px;
+        }
+        &.lastslide{
+            a{
+                border-left: unset;
+            }
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-color: #c0c2c5;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        &::after {
+          color: #424750;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

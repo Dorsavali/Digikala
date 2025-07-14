@@ -1,0 +1,119 @@
+.suggestion-container{
+    width: 100%;
+    height: 420px;
+
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .suggestion{
+        width: 90%;
+        height: inherit;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 0.8px solid rgb(224, 224, 226);
+        border-radius: 16px;
+        .suggest{
+            width: 25%;
+            height: inherit;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 20px;
+            box-sizing: border-box;
+            border-left: 0.8px solid rgb(224, 224, 226);
+            &.lastSuggest{
+                border-left: unset;
+             }
+            .text{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                flex-flow: column nowrap; 
+                padding-top: 10px;               
+                .title{
+                    font-family: IranYekanB;
+                    font-size: 16px;
+                }
+                .options{
+                    font-family: IranYekan;
+                    font-size: 11px;
+                    color: rgb(129, 133, 139);
+                }
+             
+            }
+            .items{
+                width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                .top,.bottom{
+                    height: 140px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    .image{
+                        width: 140px;
+                        height: 140px;
+                        object-fit: cover;
+                        a{
+                            width: inherit;
+                            height: inherit;
+                            img{
+                                width: inherit;
+                                height: inherit;
+                                padding: 8px;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                    .border-bottom{
+                        border-bottom: 0.8px solid rgb(224, 224, 226);
+                    }
+                    .border-left{
+                        border-left: 0.8px solid rgb(224, 224, 226);
+                    }
+                }
+
+                
+            }
+            .seeAll{
+                width: 70px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    font-family: IranYekanB;
+                    font-size: 12px;
+                    color: rgb(25, 191, 211);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    svg{
+                        
+                        width: 18px;
+                        height: 18px;
+                        font-size: 18px;
+                        fill:rgb(25, 191, 211); ;
+                    }
+                
+            }
+           
+            
+        }
+        
+    }
+}
+}

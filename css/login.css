@@ -1,0 +1,127 @@
+.text,
+.text2 {
+  width: 334px;
+  height: 26px;
+  direction: rtl;
+  font-family: IranYekan;
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 26px;
+  color: rgb(63, 64, 100);
+  text-align: right;
+  outline: none;
+}
+div.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div.box {
+    width: 400px;
+    height: 480px;
+    margin: 32px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e2;
+    box-sizing: border;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top {
+      .logo {
+        .logo-svg {
+          width: 100px;
+          height: inherit;
+          margin-bottom: 12px;
+        }
+      }
+    }
+    .buttom {
+      width: 335px;
+      height: 334px;
+      box-sizing: border-box;
+
+      .title {
+        width: 334px;
+        height: 40px;
+        margin-top: 16px;
+        display: block;
+        direction: rtl;
+        color: rgb(12, 12, 12);
+        box-sizing: border-box;
+        font-family: IranYekanB, sans-serif;
+        font-size: 19px;
+        line-height: 40px;
+        text-align: right;
+      }
+      .text {
+        margin-top: 16px;
+      }
+      .text2 {
+        margin-bottom: 14px;
+      }
+      .form {
+        width: 336px;
+        height: 148px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        direction: rtl;
+        font-family: IranYekan;
+
+        input[type="text"] {
+          width: 336px;
+          height: 50px;
+          padding: 0px 8px;
+          border: 1px solid #00bfd6;
+          border-radius: 8px;
+          color: rgb(63, 64, 100);
+          outline: none;
+          box-sizing: border-box;
+          font-family: IranYekan;
+          font-size: 15px;
+          caret-color: #00bfd6;
+        }
+        input[type="submit"] {
+            width: 336px;
+            height: 50px;
+            margin-top: 32px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: unset;
+            border-radius: 8px;
+            font-family: IranYekan;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: center;
+            padding: 12px 16px;
+            background-color: rgb(239, 64, 86);
+            cursor: pointer;
+          }
+      }
+
+
+      .sub {
+        width: 334px;
+        height: 24px;
+        font-family: IranYekan;
+        font-size: 11px;
+        margin-top: 16px;
+        font-weight: 400;
+        color: rgb(63, 64, 100);
+        outline: rgb(63, 64, 100);
+        .link {
+          color: rgb(0, 142, 178);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

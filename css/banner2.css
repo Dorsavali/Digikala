@@ -1,0 +1,40 @@
+.banner2-container{
+    width: 100%;
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .items{
+        width: 90%;
+        height: inherit;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .right,.left{
+            width: 100%;
+            height: inherit;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+            a{
+                
+                img{
+                   width: 670px;
+                   height: 264px;
+                    border-radius: 16px;
+                    
+                }
+            }
+        }
+        .right{
+            padding-left: 10px;
+        }
+        .left{
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.blog-container{
+    width: 100%;
+    height: 420px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .blog{
+        width: 90%;
+        height: inherit;
+        .title{
+            height: 35px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            
+            .text{
+                font-family: IranYekanM;
+                font-size: 16px;
+                color: rgb(12, 12, 12);
+                
+            }
+            .seeMore{
+                font-family: IranYekanM;
+                font-size: 12px;
+                color:rgb(25, 191, 211);
+                display: flex ;
+                justify-content: center;
+                align-items: center;
+                padding-left: 10px;
+                cursor: pointer;
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    fill: rgb(25, 191, 211);
+                    font-size: 10px;
+                   
+                  }
+            }
+        }
+        .news{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding-top: 20px;
+            .info{
+                width: 324px;
+                height: 278px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-flow: column nowrap;
+                border: 0.8px solid rgb(224, 224, 226);
+                border-radius: 8px;
+                
+
+                .image{
+                    width: 324px;
+                    height: 200px;
+                    img{
+                        width: inherit;
+                        height: inherit;
+                        border-radius: 8px;
+                        
+                    }
+                }
+                .subject{
+                    font-family: IranYekan,sans-serif;
+                    font-size: 12px;
+                    color: rgb(12, 12, 12);
+                    padding: 0px 16px;
+                    margin-top: 8px;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,392 @@
+.footer-container{
+    width: 100%;
+    height: 1124px;
+    border-top: 0.8px solid rgb(224, 224, 226);
+
+    padding-top: 32px;
+
+    .footer{
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        .logoAndBack{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            svg{
+                width: 195px;
+                height: 30px;
+            }
+            .buttonUp{
+                cursor: pointer;
+                border: 0.8px solid rgb(161, 163, 168);
+                padding: 8px 16px;
+                border-radius: 8px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    font-family: IranYekanM;
+                    font-size: 12px;
+                    color: rgb(161, 163, 168);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    svg{
+                        width: 24px;
+                        height: 24px;
+                        fill:  rgb(161, 163, 168);
+                      
+                    }
+                }
+            }
+
+            
+        }
+        .info{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: start;
+            align-items: center;
+            margin-top: 12px;
+            .text{
+                width: fit-content;
+                font-family: IranYekan;
+                font-size: 12px;
+                color: rgb(63, 64, 100);
+            }
+            .sign{
+                font-size: 12px;
+                color: rgb(161, 163, 168);
+                padding: 0px 20px;
+            }
+        }
+        .options{
+            width: 100%;
+            margin: 32px 0px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            .itemBox{
+                width: 292px;
+                padding: 12px 0px;
+                box-sizing: border-box;
+                
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                .subject{
+                    
+                    font-family: IranYekan;
+                    font-size: 11px;
+                    color: rgb(63, 64, 100);
+                }
+            }
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: start;
+         
+            .withDigi{
+            
+                .title{
+                    font-family: IranYekanB;
+                    font-size: 16px;
+                    color: rgb(63, 64, 100);
+                    margin-bottom: 8px;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: start;
+                    align-items: center;
+
+                    li{
+                        width: 100%;
+                        cursor: pointer;
+                        margin-bottom: 8px;
+                        a{
+                            text-decoration: none;
+                            font-family: IranYekan;
+                            font-size: 14px;
+                            color: rgb(129, 133, 139);
+                            line-height: 30px;
+                        }
+    
+                    }
+                }
+            }
+            .socialMedia{
+                width: 23%;
+                
+                .title{
+                    font-family: IranYekanB,sans-serif;
+                    font-size: 16px;
+                    color: rgb(63, 64, 100);
+                    margin-bottom: 10px;
+                    box-sizing: border-box;
+                }
+                .media{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 40px;
+                    svg{
+                       width: 40px;
+                       height: 40px;
+                       fill: rgb(161, 163, 168); 
+                    }
+                }
+                .titleAndemail{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: start;
+                    margin-top: 32px;
+                    gap: 10px;
+                    .email{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        input{
+                            width: 270px;
+                            height: 48px;
+                            background-color: #F0F0F1;
+                            border-radius: 8px;
+                            border: unset;
+                            padding: 0px 8px;
+                            font-family: IranYekanM;
+                            font-size: 14px;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            
+                        }
+                        button{
+                            border-radius: 8px;
+                            padding: 12px 16px;
+                            border: 0.8px solid  rgb(224, 224, 226);
+                            background-color: #E0E0E2;
+                            font-family: IranYekanM;
+                            font-size: 14px;
+                            color: white;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                        }
+                    }
+                    }
+                
+            }
+        }
+        .download{
+            width: 99%;
+            height: 80px;
+            background-color: rgb(60, 75, 109);
+            margin-top: 40px;
+            border-radius: 8px;
+            padding: 8px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-flow: row nowrap;
+                .logo{
+                    width: 44px;
+                    height: 44px;
+                    img{
+                        width: inherit;
+                        height: inherit;
+                    }
+                }
+                .titleDownload{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: IranYekanM;
+                    font-size: 21px;
+                    margin-right: 16px;
+                    color: white;
+                    font-weight: 500;
+                    
+                }
+            }
+            .left{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                .svgDownload{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 20px;
+                    svg{
+                        border-radius: 4px;
+                        
+                        &.dot{
+                            background-color: white;
+                            fill: #424750;
+                        }
+                    }
+                }
+            }
+        }
+        .aboutAndenamad{
+           
+            width: 99%;
+            padding-bottom: 40px;
+            border-top: 0.8px solid rgb(240, 240, 241);
+            padding-top: 32px;
+            margin-top: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: start;
+            
+                .biography{
+                    
+                    font-family: IranYekan;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: start;
+                    h1{
+                        font-size: 21px;
+                        font-weight: 500;
+                        line-height: 44px;
+                    }
+                    p{
+                        width: 981px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 26px;
+                    }
+                    a {
+                        padding-top: 15px;
+                        text-decoration: none;
+                        color: rgb(25, 191, 211);
+                        font-family: IranYekan;
+                        font-size: 12px;
+                        gap: 3px;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        svg {
+                          width: 18px;
+                          height: 18px;
+                          fill: rgb(25, 191, 211);
+                          font-size: 10px;
+                          line-height: 26px;
+                        }
+                      }
+                }
+                .namads{
+                    
+                    width: 446px;
+                    height: 106px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-flow: row nowrap;
+                    gap: 10px;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        object-fit: contain;
+                        border: 0.8px solid rgb(224, 224, 226);
+                        border-radius: 8px;
+                        padding: 16px;
+                    }
+                }
+                
+            
+            
+            
+        }
+        .copyright{
+            
+           width: 95%;
+            font-family: IranYekan;
+            font-size: 11px;
+            font-weight: 400;
+            border-top: 0.8px solid rgb(240, 240, 241);
+            padding: 32px;
+            text-align: center;
+            color: rgb(129, 133, 139);
+
+        }
+        .partners{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .topLogo,.bottomLogo{
+                cursor: pointer;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: end;
+                align-items: center;
+                .partnerLogo{
+                    width: 149px;
+                    height: 100px;
+                    background-color: #F0F0F1;
+                    padding: 0px 20px;
+                border-right: 0.8px solid rgb(224, 224, 226);
+                border-bottom: 0.8px solid rgb(224, 224, 226);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+                }
+                .partnerLogo-bottom{
+                    width: 212px;
+                    height: 100px;
+                    background-color: #F0F0F1;
+                    padding: 0px 20px;
+                border-right: 0.8px solid rgb(224, 224, 226);
+                border-bottom: 0.8px solid rgb(224, 224, 226);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+              
+              
+                
+            }
+
+            
+        }
+    }
+}

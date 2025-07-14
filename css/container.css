@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .containeritems{
+        width: 90%;
+        height: inherit;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        .item{
+            width: 332px;
+            height: inherit;
+            img{
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                border-radius: 16px;
+                
+            }
+        }
+    }
+}

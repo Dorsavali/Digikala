@@ -1,0 +1,159 @@
+.supermarketBanner {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  .supermarketBanneritems {
+    width: 90%;
+    height: inherit;
+    background-color: #ECEEEE;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .right {
+      width: 50%;
+      height: inherit;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: start;
+      align-items: center;
+      gap: 50px;
+      padding-right: 50px;
+      box-sizing: border-box;
+      cursor: pointer;
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            object-fit: cover;
+        }
+      }
+      .discount{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        
+        a{
+          height: 35px;
+          text-decoration: none;
+          font-family: IranYekanB;
+          font-size: 14px;
+          line-height: 26px;
+          background-color: rgb(2, 154, 73);
+          color: white;
+          padding: 0px 12px;
+          border-radius: 9999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+      }
+    }
+    .left{
+      cursor: pointer;
+        width: 50%;
+        height: inherit;
+        background-color: #EDEFEF;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        background-image: url(../images/container/freshPattern.png) ;
+        .Salemarket{
+          width: 70%;
+          height: inherit;
+
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          .superItem{
+            width: 16%;
+            height: inherit;
+            object-fit: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+            position: relative;
+            .circleimage{
+              width: 74px;
+              height: 74px;
+              background-color: white;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                width: 58px;
+                height: 58px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-color: white;
+              }
+            }
+            .sale{
+              width: fit-content;
+              background-color: #D32F2F;
+              border-radius: 16px;
+              color: white;
+              font-family: IranYekanB;
+              font-size: 12px;
+              padding: 2px 8px;
+              position: absolute;
+              top: 70%;
+              left: 50%;
+
+            }
+          }
+          
+
+        }
+        .allitems{
+          width: 30%;
+          height: inherit;
+
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          padding-right: 10px;
+          
+          .itembox{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+            background-color: white;
+            padding: 12px 20px;
+            border-radius: 9999px;
+            gap: 10px;
+            
+            a{
+              text-decoration: none;
+              color: rgb(2, 154, 73);
+            font-family: IranYekanB;
+            font-size: 12px;
+            }
+            svg{
+            fill: rgb(2, 154, 73);
+            font-family: IranYekanB;
+            width: 20px;
+            height: 20px;
+            }
+            
+          }
+        }
+    }
+  }
+}

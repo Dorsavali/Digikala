@@ -1,0 +1,39 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+@font-face {
+    font-family: IranYekan;
+    src: url("../fonts/IRANYekanWeb.eot");
+    src: url("../fonts/IRANYekanWeb.ttf");
+    src: url("../fonts/IRANYekanWeb.woff");
+    src: url("../fonts/IRANYekanWeb.woff2");
+}
+@font-face {
+    font-family: IranYekanB;
+    src: url("../fonts/IRANYekanWeb-Bold.eot");
+    src: url("../fonts/IRANYekanWeb-Bold.woff");
+    src: url("../fonts/IRANYekanWeb-Bold.ttf");
+    src: url("../fonts/IRANYekanWeb-Bold.woff2");
+}
+
+@font-face {
+    font-family: IranYekanM;
+    src: url("../fonts/IRANYekanWeb-Medium.eot");
+    src: url("../fonts/IRANYekanWeb-Medium.woff");
+    src: url("../fonts/IRANYekanWeb-Medium.ttf");
+    src: url("../fonts/IRANYekanWeb-Medium.woff2");
+}
+
+@font-face {
+    font-family: IranYekanXB;
+    src: url("../fonts/IRANYekanWeb-ExtraBold.eot");
+    src: url("../fonts/IRANYekanWeb-ExtraBold.woff");
+    src: url("../fonts/IRANYekanWeb-ExtraBold.ttf");
+    src: url("../fonts/IRANYekanWeb-ExtraBold.woff2");
+}
+@font-face {
+    font-family: Cube;
+    src: url("../fonts/cube-v8.2.woff");
+}
