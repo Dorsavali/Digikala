@@ -526,6 +526,7 @@ header {
           button {
             all: unset;
             label[for="open"]{
+            
             width: fit-content;
             background-color: #fef6ef;
             color: #f57f17;
@@ -534,7 +535,7 @@ header {
             box-sizing: border-box;
             font-family: IranYekanB;
             font-size: 12px;
-            
+            font-weight: 700;
             cursor: pointer;
             border: unset;
             display: flex;
